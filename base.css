@@ -1,0 +1,191 @@
+/* Reset default css
+=============================*/
+html, body, header, nav, article, time, footer, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h6, p, pre, blockquote, table, th, td {
+    margin: 0px;
+    padding: 0px;
+    font-family:"游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #green;
+}
+
+/* Reset default bootstrap propatys*/
+.container{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0pt;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* Layout for pc*/
+/*========================*/
+/* Header */
+.header__img{
+    width: 100%;
+}
+
+/* nav */
+/* ======================= */
+.gNav{}
+.gNavArea{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 63px;
+}
+.gNav__list{
+    flex: 1;
+    height: 63px;
+    background-color: #4A3B3B;
+    border-right: solid 1px black;
+}
+.gNav__list a{
+    color: #E7D8B5;
+    line-height: 63px;
+}
+.gNav__list a:hover{
+    color: #E7D8B5;
+    text-decoration: none;
+}
+.br__none{
+    display: none;
+}
+
+/* header img */
+.headerImgArea{}
+.headerImg{
+    width: 100%;
+}
+
+/* nav */
+/* ====================== */
+.navArea{}
+.nav{
+    display: flex;
+    text-align: center;
+    background-color: #CDA376;
+}
+.nav__List{
+    flex: 1;
+}
+.nav__List--cut{
+    margin-top: 15px;
+}
+
+.nav__List:hover{
+    opacity: 0.8;
+}
+.nav__img{
+    width: 100%;
+}
+
+/* side area */
+/* ======================= */
+.sideArea{}
+.side__img{
+    width: 100%;
+}
+/* main area */
+/* ======================= */
+.feature{
+    position: relative;
+}
+.feature__description{
+    position: absolute;
+    left: 15%;
+    top: 100px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.main__img{
+    width: 100%;
+}
+.philosophy{
+    position: relative;
+}
+.philosophy__description{
+    position: absolute;
+    left: 4%;
+    top: 75px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.ideal{
+    position: relative;
+}
+.ideal__description{
+    width: 60%;
+    font-size: 12px;
+    position: absolute;
+    left: 300px;
+    top: 120px;
+}
+/* footer area */
+/* ======================= */
+.footer{
+    font-size: 14px;
+}
+.footerArea{
+    position: relative;
+}
+.footer__img{
+    width: 100%;
+}
+.footer__title{
+    text-align: center;
+    color: white;
+}
+.Links{
+    width: 50%;
+    position: absolute;
+    left: 20px;
+    top: 250px;
+}
+.Links__list{
+    padding: 0 10px;
+    float: left;
+    border-right: solid 1px white;
+}
+.Links__list a{
+    color: white;
+}
+.Links__list a:hover{
+    color: white;
+    text-decoration-color: red;
+}
+.footer__access{
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: 500px;
+}
+
+
+/* Layout for sp*/
+/*========================*/
+@media screen and (max-width: 480px){
+    .gNav__list{
+        font-size: 6px;
+    }
+    .gNav__list:nth-child(5) a, .gNav__list:nth-child(7) a{
+        line-height: 31.5px;
+    }
+    .br__none{
+        display: block;
+    }
+}
